@@ -1,0 +1,75 @@
+*{
+  background-image: url('http://www.webdesignhot.com/wp-content/uploads/2014/07/Blue-Abstract-Design-Art-Background-Vector-Illustration.jpg');
+          color: yellow;
+          font-family: Verdana;
+          font-size: 0.9em;
+          line-height: 1.4em;
+}
+
+h1{
+        text-align: center;
+        text-transform: capitalize;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 10px;
+        max-width: 80px;
+        background: url('https://1.bp.blogspot.com/_sD9yQTE5QZQ/SGvRFJbT6QI/AAAAAAAADg4/5Ot2-aTA4_w/s400/blue1961.jpg.');
+        color: white;
+        word-wrap: break-word;
+}
+
+p{
+  text-indent: 1cm;
+}
+a{
+  text-decoration: none; float:left; clear: left;
+}
+a:hover{
+  text-decoration: underline;
+}
+.web{
+  color: #E37529;
+  padding: 0 0 0 18px;
+  background: #FFF url("google.png") no-repeat left center;
+  background-size: 15px;
+  padding-left: 20px;
+}
+table,tr,td {
+  margin:auto;
+  text-align:center;
+  background-image: none;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table caption{
+  caption-side: bottom;
+  text-align: left;
+  font-style:oblique;
+  font-family:cursive;
+}
+tr:nth-child(even){
+  background-color: lightgrey;
+}
+.css{
+  background: #FFF url("css.png") no-repeat ;
+  background-size: 50px 50px;
+  background-position: left;
+  background-color: lightgrey;
+  text-indent: 1cm;
+}
+.html{
+  background: #FFF url("html.png") no-repeat;
+  background-size: 50px 50px;
+  background-position: left;
+  background-color: lightgrey;
+  text-indent: 1cm;
+
+}
+.css:active{
+  background-color: yellow;
+  background: url("https://www.w3schools.com/css/");
+}
+.html:active{
+  background-color: yellow;
+  background: url("https://www.w3schools.com/html/");
+}
