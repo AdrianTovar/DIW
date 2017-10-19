@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 2 práctica 4</title>
+    <style>
+    div{
+      margin-top: 15px;
+
+    }
+    div label{
+      width: 10%;
+      float:left;
+    }
+    label.sexo{
+      float:none;
+    }
+    label.hombre{
+      float:none;
+      margin-left: 50px;
+    }
+    label.mujer{
+      float:none
+    }
+    label.no{
+      float:none;
+    }
+    div.pie{
+      border: 1px solid black;
+      font-style: italic;
+      padding: 5px;
+    }
+    input{
+      border-radius: 5px;
+    }
+    input:focus{
+      outline: none;
+      border: 1px solid violet;
+      background-color: grey;
+    }
+    textarea{
+      overflow: scroll;
+      height: 40px;
+    }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend><label for="inscripcion">Inscripcion</label></legend>
+      <form action="#" method="post">
+      <fieldset>
+        <legend><label for="informacion">Informacion Personal</label></legend>
+          <div class="nombre">
+            <label for="nombre">Nombre:*</label>
+            <input type="text" name="nombre" id="nombre" required="required" autofocus="autofocus" placeholder="Introduce tu nombre...">
+          </div>
+          <div class="apellidos">
+            <label for="apellidos">Apellidos:*</label>
+            <input type="text" name="apellidos" id="apellidos" required="required" placeholder="Introduce tus apellidos...">
+          </div>
+          <div class="email">
+            <label for="email">Email:*</label>
+            <input type="email" name="email" required="required" id="email"  placeholder="ejemplo@gmail.com">
+          </div>
+          <div>
+            <label class="sexo" for="#">Sexo</label>
+            <label class="hombre" for="hombre">Hombre</label>
+            <input type="radio" name="sexo" value="Hombre" id="hombre">
+            <label class="mujer" for="mujer">Mujer</label>
+        		<input type="radio" name="sexo" value="Mujer" id="mujer">
+            <label class="no" for="no">No asumas mi género</label>
+            <input type="radio" name="sexo" value="NO oses asumir mi género" id="no">
+          </div>
+          <div>
+            <label class="nac" for="nac">Fecha nacimiento:*</label>
+            <input type="date" name="Bday" id="nac" required="required">
+          </div>
+          <div>
+            <label class="prov" for="prov">Provincia: </label>
+            <select name="provincia" id="prov">
+            <option label="Escoge provincia"value="0"></option>
+        		<option label="Castellon" value="Castellon" ></option><!-- lable= a lo que aparece en el formulario -->
+        		<option label="Valencia" value="Valencia"></option>
+            <option label="Alicante" value="Alicante"></option>
+        		</select>
+          </div>
+          <div class="pob">
+            <label for="pob">Poblacion: </label>
+            <input type="text" name="poblacion" id="pob" placeholder="Valencia, Alicante etc...">
+          </div>
+          <div class="tel">
+            <label for="tel">Telefono: </label>
+            <input type="tel" name="usrtel" id="tel" placeholder="+34">
+          </div>
+          <div class="mot">
+            <label for="mot">Motivo inscripcion</label>
+            <textarea name="Area de texto" id="mot" cols="100" ></textarea>
+          </div>
+          <div class="color">
+            <label for="color">Escoja el color de su avatar</label>
+            <input type="color" name="favcolor" id="color">
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend><label for="#">Creacion de Usuario</label></legend>
+        <div class="usu">
+          <label for="usu">Usuario*: </label>
+          <input type="text" name="usuario" id="usu" required="required">
+        </div>
+        <div>
+          <label class="psw" for="pass">Contraseña*:</label>
+          <input type="password" name="psw" id="pass" maxlength="8" size="10">
+        </div>
+        <div class="psw2">
+          <label for="pass2">Repetir contraseña*:</label>
+          <input type="password" name="psw" id="pass2" maxlength="8" size="10">
+        </div>
+      </fieldset>
+      <div>
+        <input type="checkbox" name="copias" value="copias">Deseo recibir copias de los mensajes del foro en mi correo electronico
+      </div>
+      <div>
+        <input type="checkbox" name="notificacion" value="notificacion">Deseo recibir notificaciones de prozimos enventos en mi correo electronico
+      </div>
+      <div>
+        <input type="submit" name="submit" value="Confirmar registro">
+      </div>
+      <div class="pie">
+        <p>Los campos con * son obligatorios</p>
+      </div>
+      </form>
+    </fieldset>
+  </body>
+</html>
