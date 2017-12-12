@@ -1,0 +1,113 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+header,nav,aside,footer,form{
+  display:block;
+}
+#cabecera{
+background-color: linen;
+display:table;
+width: 100%;
+/*position: fixed;*/
+}
+header>h1{
+  display:table-cell;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+body{
+  text-align: center;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+nav {
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 20px;
+	text-align: right;
+}
+nav li {
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font: bold 14px verdana, sans-serif;
+}
+nav li a{
+	display:block;
+	padding: 5px;
+	color:white;
+	background-color: steelblue;
+  text-decoration: none;
+}
+nav li:hover a{
+	background-color: navy;
+}
+.contenedor{
+  display: table;
+}
+
+li a{
+  text-decoration: none;
+  color: black;
+}
+
+aside{
+  background-color: #CCC;
+  width:220px;
+  display:table-cell;
+  vertical-align: middle;
+}
+aside>ul{
+  height:100px;
+}
+
+aside ul li{
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.contenedor>h2{
+  display: table-cell;
+  float: left;
+  margin-left: 100px;
+
+}
+form{
+  width:600px;
+  margin-right: 40px;
+  display: table-cell;
+  vertical-align: middle;
+
+}
+p{
+  margin-left: -214px;
+}
+
+div label{
+  text-align: center;
+  float: left;
+  margin-left:118px;
+}
+#email{
+  margin-left:13px;
+  margin-top: 5px;
+}
+button{
+  background-color: steelblue;
+  color: white;
+}
+input:focus{
+  border:1px solid navy;
+}
+#pie{
+  background-color: linen;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}

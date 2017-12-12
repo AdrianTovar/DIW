@@ -1,0 +1,25 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+.cabecera{
+  background-color: lime;
+  padding: 2px;
+  margin-top: 4px;
+  border: 2px solid black;
+  height: 100px;
+  padding-top: 10px;
+}
+.banner{
+  background-color: orange;
+  height:200px;
+  border:1px solid black;
+}
+.item1,.item2,.item3,.item4{
+  background-color: red;
+  padding: 2px;
+  border: 2px solid black;
+  height: 400px;
+
+}
