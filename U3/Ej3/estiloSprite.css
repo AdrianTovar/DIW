@@ -1,0 +1,31 @@
+article h1 i{
+  background: url('./iconos/spriteIconos.png');
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+  padding-left: 40px;
+
+}
+
+.icon-novedades {
+  background-position:0 -30px;
+  height: 30px;
+  width: 39px;
+}
+
+.icon-contactar{
+  background-position: 0 0px;
+  height: 29px;
+  width:32px;
+}
+
+.icon-estudios{
+  background-position: 0 -61px;
+  width:45px;
+  height:30px;
+}
+
+i:hover{
+  background-color:lightgrey ;
+}
