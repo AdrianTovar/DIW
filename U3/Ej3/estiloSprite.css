@@ -25,7 +25,42 @@ article h1 i{
   width:45px;
   height:30px;
 }
+.fa-facebook {
+   background:#3b5998
+ }
+.fa-linkedin {
+    background:#007bb6
+}
+.fa-twitter {
+    background:#00aced
+ }
+ .fa-instagram{
+   background: #125688;
+ }
 
 i:hover{
   background-color:lightgrey ;
+}
+i{
+  border-radius: 20px;
+}
+video{
+
+    width:100%;
+    height: auto;
+
+}
+.videoIframe{
+    height:0px;
+    width:100%;
+    padding-top:56.25%;
+    position:relative;
+}
+
+.videoIframe iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
 }
