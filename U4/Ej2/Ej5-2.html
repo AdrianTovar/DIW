@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ej5</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+        $(".anima2").hide().fadeIn(2000);
+        $(".anima1").click(function(){
+    			$(this).animate({width:'600px',
+    											 opacity: '1',
+    											 fontSize:'40px',
+                           paddingLeft: '30px'
+    		 								},"slow");
+    		});
+
+    	});
+    </script>
+    <style>
+      div.anima1{
+        background-color:linen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="anima1">Esto es una prueba de animacion</div>
+    <div class="anima2">Esto es otra prueba de animacion</div>
+  </body>
+</html>

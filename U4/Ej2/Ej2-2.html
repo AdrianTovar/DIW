@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script> /*Aquí va el código*/
+      $(document).ready(function(){
+        var count = true;
+        $("img").width(400);
+        $("body").css("text-align","center");
+        $("img").hide();
+        $("button").hide();
+
+        $("h1").on("click",function(){
+          $("img").slideToggle();
+          $("button").slideToggle();
+          if(count){
+            $(this).html("La imagen se ha desplegado");
+            count = false
+          }else {
+            count = true;
+            $(this).html("Haz click aquí para desplegar la imagen!");
+          }
+        });
+        $("button:first").on("click",function(){
+          $("img").animate({
+            width: '+=20px'
+          });
+        });
+        $("button:last").on("click",function(){
+          $("img").animate({
+            width: '-=20px'
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Haz click aquí para desplegar la imagen!</h1>
+    <div class="contenedor">
+      <img src="imagenes/mundo.jpg">
+      <button id="masAncho">+</button>
+      <button id="menosAncho">-</button>
+    </div>
+  </body>
+</html>
